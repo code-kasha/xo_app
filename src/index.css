@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.main-grid {
+		@apply container grid grid-cols-2 xxs:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 p-2 gap-2 items-center mx-auto;
+	}
+
+	.page-title {
+		@apply text-center font-bold text-2xl p-2 mt-4;
+	}
+
+	.grid-img {
+		@apply gf:h-[160px] gf:w-[120px] mb:h-[170px] mb:w-[130px] xxxs:h-[180px] xxxs:w-[140px] xxs:h-[200px] xxs:w-[150px] xs:h-[220px] xs:w-[170px] sm:h-[230px] sm:w-[180px] md:h-[240px] md:w-[180px] lg:h-[260px] lg:w-[200px] 2xl:h-[280px] 2xl:w-[220px] rounded-lg object-fill mx-auto border shadow-sm shadow-black;
+	}
+
+	.item-btn {
+		@apply w-2/3 px-2 py-1 rounded-xl border border-slate-700 hover:bg-slate-700 hover:text-white mx-auto;
+	}
+}
